@@ -1,0 +1,23 @@
+RewriteEngine On
+
+# Ne pas modifier si ça existe
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Page principale "/" | ^$ correspond à la racine | QSA conserve les éventuels GET
+RewriteRule ^$ index.php [QSA,L]
+
+# Page lost "/lost"
+RewriteRule ^lost$ index.php?route=lost [QSA,L]
+
+# Liste des excuses "/excuses"
+RewriteRule ^excuses$ index.php?route=excuses [QSA,L]
+
+# Ajout d'une excuse "/ajouter-excuse"
+RewriteRule ^ajouter-excuse$ index.php?route=ajouter_excuse [QSA,L]
+
+# Code HTTP "/$http_code" (ex: /404, /500)
+RewriteRule ^([0-9]{3})$ index.php?route=http_code&code=$1 [QSA,L]
+
+# Tout le reste => 404
+RewriteRule ^.*$ index.php?route=404 [QSA,L]
