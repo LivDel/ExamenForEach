@@ -16,6 +16,9 @@ switch ($route) {
         $code = $_GET['code'] ?? '000';
         include(__DIR__ . '/views/http_code.php');
         break;
+    case 'excuses':
+        include(__DIR__ . '/views/excuses.php');
+        break;
     case '404':
         default:
             include(__DIR__ . '/views/404.php');
