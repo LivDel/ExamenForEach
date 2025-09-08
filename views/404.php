@@ -15,7 +15,6 @@
     <a href="/" class="btn btn-primary btn-lg mt-3">Retour à l'accueil</a>
 </div>
 
-
     <!-- Bootstrap JS (optionnel) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
