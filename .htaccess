@@ -19,9 +19,6 @@ RewriteRule ^home$ index.php?route=home [QSA,L]
 # Liste des excuses "/excuses"
 RewriteRule ^excuses$ index.php?route=excuses [QSA,L]
 
-# Ajout d'une excuse "/ajouter-excuse"
-RewriteRule ^ajouter-excuse$ index.php?route=ajouter-excuse [QSA,L]
-
 # Code HTTP "/$http_code" (ex: /404, /500)
 RewriteRule ^([0-9]{3})$ index.php?route=http_code&code=$1 [QSA,L]
 
