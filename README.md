@@ -14,10 +14,13 @@ Une fois la phrase générée, afficher la phrase excuse au centre de l'écran a
 pour générer une nouvelle phrase.
 
 # Framework 
-Utilisation de bootstrap pour le css. 
+Utilisation de bootstrap pour le css et certains scripts comme celui des modales. 
 
 # Langages 
-Utilisation des langages que je connais, donc HTML, CSS, Javascript, PHP. 
+Utilisation des langages que je connais, donc HTML, CSS, Javascript, PHP. La version de PHP utilisée est la version 8.4.5
 
 # Simulation 
 De mon côté j'utilise laragon afin d'avoir le rendu serveur. 
+
+# Autres
+J'ai fait l'application avec ce que j'ai compris des consignes. S'il y a des choses hors sujet, n'hésitez pas à me le dire, je ferais les modifications nécessaires.
